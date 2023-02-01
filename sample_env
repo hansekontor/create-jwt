@@ -1,0 +1,29 @@
+# Store your keys in the same format that jwt.js logs newly created keys. If no keys are defined, new ones will be used.
+# format: {"publicKey": "yourPublicKey"} and {"privateKey": "yourPrivateKey"}
+PUBKEY =
+PRIVKEY =
+
+# To ensure full jwt functionality, place the JWT you have received by your upstream relay here. It will be the base for your new JWT as it contains all upstream fees that will be added.
+# Only then, merchants can use the jwt to calculate the expected fee add on.
+JWT_UPSTREAM =
+
+# Define your JWT settings here.
+# TYPE = type of charged fee (0 = percentage, 1 = fixed amount)
+# AMOUNT = fee value (if percentage, AMOUNT/1000; if fixed amount, AMOUNT/10**4 
+# AUDIENCE = a name for the audience that receives the JWT
+# ISSUER = a name for the issuer creating this JWT
+TYPE =
+AMOUNT =
+AUDIENCE =
+ISSUER =
+
+
+# example 1: Relay A wants to issue a JWT for Merchant B that charges 1%
+# TYPE = 0
+# AMOUNT = 10
+# AUDIENCE = Merchant B
+# ISSUER = Relay A
+
+# example 2: Relay A wants to issue a JWT for Merchant B that charges 5 BUX 
+# TYPE = 1
+# AMOUNT = 50000
