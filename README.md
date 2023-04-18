@@ -2,7 +2,7 @@
 
 You should create a JWT for each downstream Relay or merchant connected to your Relay server. Each JWT contains the fees which are added to payment requests sent through the related Relay network.
 
-Follow the relay-jwt protocol, outlined (here)[https://github.com/bux-digital/documentation/blob/main/relay-jwt.md].
+Follow the relay-jwt protocol, outlined [here](https://github.com/bux-digital/documentation/blob/main/relay-jwt.md).
 
 * install modules using `npm install`
 * initialize your .env file with `cp sample_env .env`
